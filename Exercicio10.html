@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+</head>
+<body>
+    <h1>Preço do produto ao consumidor</h1>
+    <p> Nome do produto: <span id="nomeprodd"></span></p>
+    <p> Preço Final: R$ <span id="preçofinall"></span></p>
+    <script>
+        let nomeprod = prompt("Digite o nome do produto.");
+        let custofabri = prompt("Digite o custo de fabricação.");
+        let taxasimp = prompt ("Digite a porcentagem de taxas de impostos.");
+        let taxasdist  = prompt ("Digite a porcentagem de taxas de distribuição.");
+        let precofinal;
+        precofinal = (custofabri + (taxasimp / 100 + (taxasdist / 100)));
+        document.getElementById("nomeprodd").innerHTML = nomeprod;
+        document.getElementById("preçofinall").innerHTML = precofinal;
+    </script>
+    
+</body>
+</html>
